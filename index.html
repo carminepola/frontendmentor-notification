@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Notifications page</title>
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <meta name="author" content="Carmine Pola">
+  </head>
+  <body>
+    <div class="flex flex-center  flex-column  flex-middle h-100">
+      <div class="card flex flex-column bg-white">
+        <div class="card-container">
+          <div class="card-header sticky-top w-100 bg-white ">
+            <div class="flex flex-between flex-middle">
+              <div class="flex flex-middle">
+                <h2 class="text-dblue">Notifications</h2>
+                <div class="box-count"> 3 </div>
+              </div>
+              <div class="text-bold">
+                <a class="read" onclick="readAll()">Mark all as read</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="notification active flex flex-between flex">
+              <div class="flex  ">
+                <div>
+                  <img src="/assets/images/avatar-mark-webber.webp" height="50" width="50">
+                </div>
+                <div class="notification-row">
+                  <div class="notification-led flex flex-between  flex-middle ">
+                    <div class="flex flex-column">
+                      <div>
+                        <span class="text-bold text-dblue">Mark Webber</span>&nbsp;&nbsp; <span>reacted to your recet post</span>&nbsp;&nbsp; <span class="text-bold dblue">My frist tournamento today!</span>
+                      </div>
+                      <div> 1m ago </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="circle"></div>
+            </div>
+            <div class="notification active flex flex-between flex">
+              <div class="flex  ">
+                <div>
+                  <img src="/assets/images/avatar-angela-gray.webp" height="50" width="50">
+                </div>
+                <div class="notification-row">
+                  <div class="notification-led flex flex-between  flex-middle ">
+                    <div class="flex flex-column">
+                      <div>
+                        <span class="text-bold text-dblue">Angela Gray</span>&nbsp;&nbsp; <span>followed you</span>
+                      </div>
+                      <div> 5m ago </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="circle"></div>
+            </div>
+            <div class="notification active flex flex-between flex">
+              <div class="flex  ">
+                <div>
+                  <img src="/assets/images/avatar-jacob-thompson.webp" height="50" width="50">
+                </div>
+                <div class="notification-row">
+                  <div class="notification-led flex flex-between  flex-middle ">
+                    <div class="flex flex-column">
+                      <div>
+                        <span class="text-bold text-dblue">Jacop Thompson</span>&nbsp;&nbsp; <span>has joined your group</span>&nbsp;&nbsp; <a href="#">Chess Club</a>
+                      </div>
+                      <div> 1 day ago </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="circle"></div>
+            </div>
+            <div class="notification  flex flex-between flex">
+              <div class="flex   ">
+                <div>
+                  <img src="/assets/images/avatar-rizky-hasanuddin.webp" height="50" width="50">
+                </div>
+                <div class="notification-row ">
+                  <div class="notification-led flex flex-between  flex-middle ">
+                    <div class="flex flex-column">
+                      <div>
+                        <span class="text-bold text-dblue">Jacop Thompson</span>&nbsp;&nbsp; <span>sent you a private message</span>
+                      </div>
+                      <div> 5 days ago </div>
+                      <div class="message"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and i'm already having lots of fun and improving my game. </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="circle"></div>
+            </div>
+            <div class="notification  flex flex-between flex">
+              <div class="flex   ">
+                <div>
+                  <img src="/assets/images/avatar-kimberly-smith.webp" height="50" width="50">
+                </div>
+                <div class="notification-row ">
+                  <div class="notification-led flex flex-between  flex-middle ">
+                    <div class="flex flex-column">
+                      <div>
+                        <span class="text-bold text-dblue">Kimberly Smith</span>&nbsp;&nbsp; <span>commented on your picture</span>
+                      </div>
+                      <div> 1 week ago </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src="/assets/images/image-chess.webp" height="50" width="50">
+              </div>
+              <div class="circle"></div>
+            </div>
+            <div class="notification  flex flex-between flex">
+              <div class="flex   ">
+                <div>
+                  <img src="/assets/images/avatar-kimberly-smith.webp" height="50" width="50">
+                </div>
+                <div class="notification-row ">
+                  <div class="notification-led flex flex-between  flex-middle ">
+                    <div class="flex flex-column">
+                      <div>
+                        <span class="text-bold text-dblue">Nathan Peterson</span>&nbsp;&nbsp; <span>reacted your recent post</span> &nbsp;&nbsp; <span class="text-bold ">5 end-game strategies to increase your win rate</span>
+                      </div>
+                      <div> 2 weeks ago </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="circle"></div>
+            </div>
+            <div class="notification  flex flex-between flex">
+              <div class="flex   ">
+                <div>
+                  <img src="/assets/images/avatar-anna-kim.webp" height="50" width="50">
+                </div>
+                <div class="notification-row ">
+                  <div class="notification-led flex flex-between  flex-middle ">
+                    <div class="flex flex-column">
+                      <div>
+                        <span class="text-bold text-dblue">Anna Kim</span>&nbsp;&nbsp; <span>left the group</span> &nbsp;&nbsp; <a href="#">Chess Club</a>
+                      </div>
+                      <div> 2 weeks ago </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.carminepola.it">Carmine Pola</a>
+        </div>
+      </div>
+      <script src="/assets/js/script.js"></script>
+  </body>
+</html>
